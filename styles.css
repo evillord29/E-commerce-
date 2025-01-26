@@ -1,0 +1,147 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header styles */
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header input[type="text"] {
+    border: none;
+    border-radius: 9px;
+    padding: 8px 12px;
+    width: 300px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+header button {
+    border: none;
+    height: 40px;
+    background-color: #ffc107;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #ffca28;
+}
+
+/* Card styles */
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+.bannar-img img{
+    width: 100%;
+}
+
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-body h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.card-body button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-body button:hover {
+    background-color: #218838;
+}
+
+/* Grid layout for product cards */
+#productList .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#productList .col-6.col-md-4 {
+    flex: 0 0 33.33%; /* 3 products per row */
+    max-width: 33.33%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #ffc107;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer h6 {
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+
+/* Additional Flexbox for Equal Height Cards */
+.card {
+    height: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+/* Limiting Description to 200 Characters */
+.card-body p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
